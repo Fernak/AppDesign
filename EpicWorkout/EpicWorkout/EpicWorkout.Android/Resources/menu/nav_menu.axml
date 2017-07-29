@@ -3,6 +3,10 @@
 
   <group android:checkableBehavior="single">
     <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/person_outline"
+        android:title="Profile"/>
+    <item
         android:id="@+id/nav_current"
         android:icon="@drawable/ic_fitness_center_black_24dp"
         android:title="Current Workout" />
@@ -10,6 +14,10 @@
         android:id="@+id/nav_plans"
         android:icon="@drawable/ic_fitness_center_black_24dp"
         android:title="Plans" />
+    <item
+        android:id="@+id/nav_exercises"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="Exercises" />
     <item
         android:id="@+id/nav_schedule"
         android:icon="@drawable/ic_date_range_black_24dp"
@@ -24,9 +32,6 @@
       <item
           android:icon="@drawable/ic_forum"
           android:title="Macro Tracker" />
-      <item
-          android:icon="@drawable/ic_forum"
-          android:title="Sub item 3" />
     </menu>
   </item>
 

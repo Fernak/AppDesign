@@ -3,6 +3,6 @@
   <string name="ApplicationName">Epic_Workout</string>
   <string name="profileString">Profile</string>
   <string name="plansString">Workout Plans</string>
-  <string name="currentString">CurrentWorkout</string>
+  <string name="currentString">Current Workout</string>
   <string name="scheduleString">Schedule</string>
 </resources>

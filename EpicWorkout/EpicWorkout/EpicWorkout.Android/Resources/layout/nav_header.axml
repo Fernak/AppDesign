@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="192dp"
     android:background="?attr/colorPrimaryDark"
+    android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical"
     android:gravity="bottom">
-    <ImageView
-        android:id="@+id/imgHeader"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/barbell2"
-        android:scaleType="centerCrop" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Username"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:id="@+id/textView1"
-        android:textColor="#ffffff"
-        android:paddingBottom="10dp"
-        android:layout_gravity="bottom|center" />
-</FrameLayout>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+</LinearLayout>

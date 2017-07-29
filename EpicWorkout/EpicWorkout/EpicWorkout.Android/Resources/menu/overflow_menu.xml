@@ -7,7 +7,7 @@
   <item android:id="@+id/item2"
         android:title="Item 2"
         myApp:showAsAction="never"/>
-  <item android:id="@+id/item3"
-        android:title="Item 3"
+  <item android:id="@+id/item_signout"
+        android:title="Sign Out"
         myApp:showAsAction="never"/>
 </menu>
