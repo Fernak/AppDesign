@@ -18,10 +18,10 @@ namespace EpicWorkout.Droid.Authentication
 
         private Button btnRegister;
         EditText input_username, input_email, input_password;
-        RelativeLayout activity_sign_up;
+        LinearLayout activity_sign_up;
 
         FirebaseAuth auth;
-        FirebaseDatabase mDatatbase;
+        //FirebaseDatabase mDatatbase;
 
         private const String mFirebaseURL = "https://epicworkout-8c711.firebaseio.com/";
 
@@ -38,7 +38,7 @@ namespace EpicWorkout.Droid.Authentication
             input_username = view.FindViewById<EditText>(Resource.Id.signup_username);
             input_email = view.FindViewById<EditText>(Resource.Id.signup_email);
             input_password = view.FindViewById<EditText>(Resource.Id.signup_password);
-            activity_sign_up = view.FindViewById<RelativeLayout>(Resource.Id.activity_sign_up);
+            activity_sign_up = view.FindViewById<LinearLayout>(Resource.Id.activity_sign_up);
             
             btnRegister.Click += BtnSignup_Click;
             return view;
@@ -72,14 +72,14 @@ namespace EpicWorkout.Droid.Authentication
             }
         }
 
-        private async void CreateNewUser(FirebaseUser user)
+        private void CreateNewUser(FirebaseUser user)
         {
             User newUser = new User();
             newUser.uid = user.Uid;
             newUser.name = input_username.Text;
             newUser.email = user.Email;
 
-           
+
             //var firebase = new FirebaseClient(mFirebaseURL);
             //var item = await firebase.Child("users").PostAsync(newUser);
 

@@ -25,11 +25,11 @@ namespace EpicWorkout.Droid.Authentication
         private EditText input_email, input_password;
         private TextView btnSignUp, btnForgotPassword;
 
-        RelativeLayout activity_main;
+        LinearLayout activity_main;
 
         public static FirebaseApp app;
         FirebaseAuth mFirebaseAuth;
-        FirebaseUser mFirebaseUser;
+        //FirebaseUser mFirebaseUser;
         #endregion
         //-------------------------------------------------------------------------------------------------------//
         //OnCreate Method
@@ -101,7 +101,7 @@ namespace EpicWorkout.Droid.Authentication
             input_password = FindViewById<EditText>(Resource.Id.login_password);
             btnSignUp = FindViewById<TextView>(Resource.Id.login_btn_sign_up);
             btnForgotPassword = FindViewById<TextView>(Resource.Id.login_btn_forgot_password);
-            activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
+            activity_main = FindViewById<LinearLayout>(Resource.Id.activity_main);
         }
         private void InitializeFirebase()
         {

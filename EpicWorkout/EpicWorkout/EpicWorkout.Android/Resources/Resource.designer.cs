@@ -2579,6 +2579,9 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a003a
 			public const int fill_vertical = 2131361850;
 			
+			// aapt resource value: 0x7f0a00b9
+			public const int first_reactive_layout = 2131361977;
+			
 			// aapt resource value: 0x7f0a0046
 			public const int @fixed = 2131361862;
 			
@@ -2621,14 +2624,14 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a00a2
 			public const int info = 2131361954;
 			
-			// aapt resource value: 0x7f0a00cc
-			public const int item1 = 2131361996;
-			
-			// aapt resource value: 0x7f0a00cd
-			public const int item2 = 2131361997;
-			
 			// aapt resource value: 0x7f0a00ce
-			public const int item_signout = 2131361998;
+			public const int item1 = 2131361998;
+			
+			// aapt resource value: 0x7f0a00cf
+			public const int item2 = 2131361999;
+			
+			// aapt resource value: 0x7f0a00d0
+			public const int item_signout = 2131362000;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int item_touch_helper_previous_elevation = 2131361792;
@@ -2654,32 +2657,32 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a004f
 			public const int list_item = 2131361871;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int login_btn_forgot_password = 2131361982;
-			
-			// aapt resource value: 0x7f0a00bd
-			public const int login_btn_login = 2131361981;
-			
 			// aapt resource value: 0x7f0a00c0
-			public const int login_btn_sign_up = 2131361984;
-			
-			// aapt resource value: 0x7f0a00ba
-			public const int login_email = 2131361978;
-			
-			// aapt resource value: 0x7f0a00b9
-			public const int login_input_email = 2131361977;
-			
-			// aapt resource value: 0x7f0a00bb
-			public const int login_input_password = 2131361979;
+			public const int login_btn_forgot_password = 2131361984;
 			
 			// aapt resource value: 0x7f0a00bf
-			public const int login_layout_or = 2131361983;
+			public const int login_btn_login = 2131361983;
+			
+			// aapt resource value: 0x7f0a00c2
+			public const int login_btn_sign_up = 2131361986;
 			
 			// aapt resource value: 0x7f0a00bc
-			public const int login_password = 2131361980;
+			public const int login_email = 2131361980;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int masked = 2131361990;
+			// aapt resource value: 0x7f0a00bb
+			public const int login_input_email = 2131361979;
+			
+			// aapt resource value: 0x7f0a00bd
+			public const int login_input_password = 2131361981;
+			
+			// aapt resource value: 0x7f0a00c1
+			public const int login_layout_or = 2131361985;
+			
+			// aapt resource value: 0x7f0a00be
+			public const int login_password = 2131361982;
+			
+			// aapt resource value: 0x7f0a00c8
+			public const int masked = 2131361992;
 			
 			// aapt resource value: 0x7f0a009b
 			public const int media_actions = 2131361947;
@@ -2693,20 +2696,20 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a0022
 			public const int multiply = 2131361826;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int nav_current = 2131361992;
-			
 			// aapt resource value: 0x7f0a00ca
-			public const int nav_exercises = 2131361994;
+			public const int nav_current = 2131361994;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int nav_plans = 2131361993;
-			
-			// aapt resource value: 0x7f0a00c7
-			public const int nav_profile = 2131361991;
+			// aapt resource value: 0x7f0a00cc
+			public const int nav_exercises = 2131361996;
 			
 			// aapt resource value: 0x7f0a00cb
-			public const int nav_schedule = 2131361995;
+			public const int nav_plans = 2131361995;
+			
+			// aapt resource value: 0x7f0a00c9
+			public const int nav_profile = 2131361993;
+			
+			// aapt resource value: 0x7f0a00cd
+			public const int nav_schedule = 2131361997;
 			
 			// aapt resource value: 0x7f0a0090
 			public const int nav_view = 2131361936;
@@ -2807,6 +2810,9 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a0078
 			public const int search_voice_btn = 2131361912;
 			
+			// aapt resource value: 0x7f0a00ba
+			public const int second_reactive_layout = 2131361978;
+			
 			// aapt resource value: 0x7f0a0079
 			public const int select_dialog_listview = 2131361913;
 			
@@ -2822,14 +2828,14 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a001f
 			public const int showTitle = 2131361823;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int signup_btn_forgot_password = 2131361986;
-			
 			// aapt resource value: 0x7f0a00c4
-			public const int signup_btn_login = 2131361988;
+			public const int signup_btn_forgot_password = 2131361988;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int signup_btn_register = 2131361985;
+			// aapt resource value: 0x7f0a00c6
+			public const int signup_btn_login = 2131361990;
+			
+			// aapt resource value: 0x7f0a00c3
+			public const int signup_btn_register = 2131361987;
 			
 			// aapt resource value: 0x7f0a008e
 			public const int signup_btn_signup = 2131361934;
@@ -2846,8 +2852,8 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a0088
 			public const int signup_input_username = 2131361928;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int signup_layout_or = 2131361987;
+			// aapt resource value: 0x7f0a00c5
+			public const int signup_layout_or = 2131361989;
 			
 			// aapt resource value: 0x7f0a008d
 			public const int signup_password = 2131361933;
@@ -2963,8 +2969,8 @@ namespace EpicWorkout.Droid
 			// aapt resource value: 0x7f0a000e
 			public const int view_offset_helper = 2131361806;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int visible = 2131361989;
+			// aapt resource value: 0x7f0a00c7
+			public const int visible = 2131361991;
 			
 			// aapt resource value: 0x7f0a0014
 			public const int wide = 2131361812;
