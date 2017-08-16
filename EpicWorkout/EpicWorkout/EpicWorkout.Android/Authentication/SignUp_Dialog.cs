@@ -8,6 +8,7 @@ using Firebase.Auth;
 using Firebase.Database;
 using Android.Gms.Tasks;
 using Android.Support.Design.Widget;
+using System.Collections.Generic;
 
 namespace EpicWorkout.Droid.Authentication
 {
@@ -20,8 +21,8 @@ namespace EpicWorkout.Droid.Authentication
         EditText input_username, input_email, input_password;
         RelativeLayout activity_sign_up;
 
-        FirebaseAuth auth;
-        FirebaseDatabase mDatatbase;
+        FirebaseAuth mAuth;
+        FirebaseDatabase mDatabase;
 
         private const String mFirebaseURL = "https://epicworkout-8c711.firebaseio.com/";
 
@@ -31,7 +32,8 @@ namespace EpicWorkout.Droid.Authentication
             var view = inflater.Inflate(Resource.Layout.dialog_signup, container, false);
 
             //InitFirebase
-            auth = FirebaseAuth.GetInstance(Login.app);
+            mAuth = FirebaseAuth.GetInstance(Login.app);
+            mDatabase = FirebaseDatabase.GetInstance(mFirebaseURL);
 
             //View
             btnRegister = view.FindViewById<Button>(Resource.Id.signup_btn_signup);
@@ -39,7 +41,7 @@ namespace EpicWorkout.Droid.Authentication
             input_email = view.FindViewById<EditText>(Resource.Id.signup_email);
             input_password = view.FindViewById<EditText>(Resource.Id.signup_password);
             activity_sign_up = view.FindViewById<RelativeLayout>(Resource.Id.activity_sign_up);
-            
+
             btnRegister.Click += BtnSignup_Click;
             return view;
         }
@@ -53,15 +55,14 @@ namespace EpicWorkout.Droid.Authentication
             else if (input_password.Text == "")
                 Toast.MakeText(Context, "Input Password", ToastLength.Short);
             else
-                auth.CreateUserWithEmailAndPassword(input_email.Text, input_password.Text)
+                mAuth.CreateUserWithEmailAndPassword(input_email.Text, input_password.Text)
                     .AddOnCompleteListener(this);
         }
         public void OnComplete(Task task)
         {
             if (task.IsSuccessful == true)
             {
-                var user = FirebaseAuth.Instance.CurrentUser;
-                CreateNewUser(user);
+                CreateNewUser(FirebaseAuth.Instance.CurrentUser);
                 Snackbar snackBar = Snackbar.Make(activity_sign_up, "Register successfully", Snackbar.LengthShort);
                 snackBar.Show();
             }
@@ -71,26 +72,26 @@ namespace EpicWorkout.Droid.Authentication
                 snackBar.Show();
             }
         }
-
-        private async void CreateNewUser(FirebaseUser user)
+        public async void CreateNewUser(FirebaseUser currentUser)
         {
-            User newUser = new User();
-            newUser.uid = user.Uid;
-            newUser.name = input_username.Text;
-            newUser.email = user.Email;
+            User user = new User();
+            user.uid = currentUser.Uid;
+            user.name = input_username.Text;
+            user.email = input_email.Text;
 
-           
-            //var firebase = new FirebaseClient(mFirebaseURL);
-            //var item = await firebase.Child("users").PostAsync(newUser);
+            DatabaseReference usersRef = mDatabase.GetReference("users");
+            usersRef.Child(user.uid).Child(user.name).SetValue(user.email);
 
-
-
+            //Use built in methods to set username and later picture
+            var mUser = FirebaseAuth.Instance.CurrentUser;
+            var profileUpdates = new UserProfileChangeRequest.Builder()
+                .SetDisplayName(user.name)
+                .Build();
+            try
+            {
+                await mUser.UpdateProfileAsync(profileUpdates);
+            }
+            catch (Exception ex) { }
         }
-    }
-    public class User
-    {
-        public string uid { get; set; }
-        public string name { get; set; }
-        public string email { get; set; }
     }
 }

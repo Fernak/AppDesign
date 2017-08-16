@@ -38,3 +38,43 @@ C:\Users\Fernaak\Documents\EpicWorkout\EpicWorkout\obj\Debug\R.cs.flag
 C:\Users\Fernaak\Documents\EpicWorkout\EpicWorkout\obj\Debug\uploadflags.txt
 C:\Users\Fernaak\Documents\EpicWorkout\EpicWorkout\bin\Debug\EpicWorkout.dll.mdb
 C:\Users\Fernaak\Documents\EpicWorkout\EpicWorkout\obj\Debug\android\assets\EpicWorkout.dll.mdb
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\EpicWorkout.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\EpicWorkout.pdb
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\EpicWorkout.EpicWorkout.apk
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\EpicWorkout.EpicWorkout-Signed.apk
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Newtonsoft.Json.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\SQLitePCLRaw.batteries_green.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\SQLitePCLRaw.core.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\System.Net.Http.Extensions.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\System.Net.Http.Primitives.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\Newtonsoft.Json.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\System.Net.Http.Extensions.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\System.Net.Http.Primitives.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\EpicWorkout.csprojResolveAssemblyReference.cache
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\EpicWorkout.dll
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\EpicWorkout.pdb
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\android\bin\EpicWorkout.EpicWorkout.apk
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\values\strings.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\layout\activity_to_do.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\layout\row_list_to_do.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\values\styles.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\drawable-ldpi\ic_launcher.png
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\drawable-mdpi\ic_launcher.png
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\drawable-xhdpi\ic_launcher.png
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\drawable-hdpi\ic_launcher.png
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\menu\activity_main.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\values-v11\styles.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\res\values-v14\styles.xml
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\R.cs.flag
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\uploadflags.txt
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\bin\Debug\EpicWorkout.dll.mdb
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout_Azure_Data_Test\EpicWorkout\obj\Debug\android\assets\EpicWorkout.dll.mdb

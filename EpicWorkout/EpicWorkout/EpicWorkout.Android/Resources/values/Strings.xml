@@ -4,5 +4,6 @@
   <string name="profileString">Profile</string>
   <string name="plansString">Workout Plans</string>
   <string name="currentString">Current Workout</string>
+  <string name="exerciseString">Exercises</string>
   <string name="scheduleString">Schedule</string>
 </resources>

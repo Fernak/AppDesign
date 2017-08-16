@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>7/29/2017 11:20:07 AM</xs:documentation>
+    <xs:documentation>8/12/2017 3:28:21 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -39,6 +39,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/card_exercise" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -53,7 +54,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialog_forgot_password" />
             <xs:enumeration value="@layout/dialog_signup" />
+            <xs:enumeration value="@layout/dialog_wb_main" />
             <xs:enumeration value="@layout/fragment_current" />
             <xs:enumeration value="@layout/fragment_exercise" />
             <xs:enumeration value="@layout/fragment_plans" />
@@ -80,10 +83,7 @@
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
-            <xs:enumeration value="@layout/signin_dashboard" />
-            <xs:enumeration value="@layout/signin_forgotpassword" />
             <xs:enumeration value="@layout/signin_main" />
-            <xs:enumeration value="@layout/signin_signup" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -160,6 +160,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/card_exercise" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -174,7 +175,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialog_forgot_password" />
             <xs:enumeration value="@layout/dialog_signup" />
+            <xs:enumeration value="@layout/dialog_wb_main" />
             <xs:enumeration value="@layout/fragment_current" />
             <xs:enumeration value="@layout/fragment_exercise" />
             <xs:enumeration value="@layout/fragment_plans" />
@@ -201,10 +204,7 @@
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
-            <xs:enumeration value="@layout/signin_dashboard" />
-            <xs:enumeration value="@layout/signin_forgotpassword" />
             <xs:enumeration value="@layout/signin_main" />
-            <xs:enumeration value="@layout/signin_signup" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -281,6 +281,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/card_exercise" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -295,7 +296,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialog_forgot_password" />
             <xs:enumeration value="@layout/dialog_signup" />
+            <xs:enumeration value="@layout/dialog_wb_main" />
             <xs:enumeration value="@layout/fragment_current" />
             <xs:enumeration value="@layout/fragment_exercise" />
             <xs:enumeration value="@layout/fragment_plans" />
@@ -322,10 +325,7 @@
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
-            <xs:enumeration value="@layout/signin_dashboard" />
-            <xs:enumeration value="@layout/signin_forgotpassword" />
             <xs:enumeration value="@layout/signin_main" />
-            <xs:enumeration value="@layout/signin_signup" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -402,6 +402,7 @@
             <xs:enumeration value="@layout/abc_search_dropdown_item_icons_2line" />
             <xs:enumeration value="@layout/abc_search_view" />
             <xs:enumeration value="@layout/abc_select_dialog_material" />
+            <xs:enumeration value="@layout/card_exercise" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -416,7 +417,9 @@
             <xs:enumeration value="@layout/design_navigation_menu" />
             <xs:enumeration value="@layout/design_navigation_menu_item" />
             <xs:enumeration value="@layout/design_text_input_password_icon" />
+            <xs:enumeration value="@layout/dialog_forgot_password" />
             <xs:enumeration value="@layout/dialog_signup" />
+            <xs:enumeration value="@layout/dialog_wb_main" />
             <xs:enumeration value="@layout/fragment_current" />
             <xs:enumeration value="@layout/fragment_exercise" />
             <xs:enumeration value="@layout/fragment_plans" />
@@ -443,10 +446,7 @@
             <xs:enumeration value="@layout/select_dialog_item_material" />
             <xs:enumeration value="@layout/select_dialog_multichoice_material" />
             <xs:enumeration value="@layout/select_dialog_singlechoice_material" />
-            <xs:enumeration value="@layout/signin_dashboard" />
-            <xs:enumeration value="@layout/signin_forgotpassword" />
             <xs:enumeration value="@layout/signin_main" />
-            <xs:enumeration value="@layout/signin_signup" />
             <xs:enumeration value="@layout/support_simple_spinner_dropdown_item" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -566,6 +566,7 @@
             <xs:enumeration value="@string/common_signin_button_text" />
             <xs:enumeration value="@string/common_signin_button_text_long" />
             <xs:enumeration value="@string/currentString" />
+            <xs:enumeration value="@string/exerciseString" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />

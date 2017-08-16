@@ -9,6 +9,10 @@ using EpicWorkout.Droid.Ativities;
 using EpicWorkout.Droid.Fragments;
 using Firebase.Auth;
 using EpicWorkout.Droid.Authentication;
+using Firebase.Database;
+using Android.Widget;
+using Refractored.Controls;
+using EpicWorkout.Droid.WorkoutBuilder;
 
 namespace EpicWorkout.Droid.Activities
 {
@@ -23,9 +27,15 @@ namespace EpicWorkout.Droid.Activities
         DrawerLayout drawerLayout;
         NavigationView navigationView;
         IMenuItem previousItem;
+        TextView usernameText;
+        CircleImageView userImage;
+        View mHeader;
 
         FloatingActionButton fab;
+        FirebaseAuth mAuth;
+        FirebaseDatabase mDatabase;
 
+        private const String mFirebaseURL = "https://epicworkout-8c711.firebaseio.com/";
         #endregion
         //-------------------------------------------------------------------------------------------------------//
         //OnCreate Method
@@ -42,15 +52,24 @@ namespace EpicWorkout.Droid.Activities
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+            mHeader = navigationView.GetHeaderView(0);
+            usernameText = mHeader.FindViewById<TextView>(Resource.Id.nav_username);
+            userImage = mHeader.FindViewById<CircleImageView>(Resource.Id.avatar);
 
+            mAuth = FirebaseAuth.GetInstance(Login.app);
+            mDatabase = FirebaseDatabase.GetInstance(mFirebaseURL);
+            GetUserInfo(FirebaseAuth.Instance.CurrentUser);
+            
             //Click event calls for the main layout
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
             fab.Click += Fab_Click;
 
+            //Set the initial tab to be opened
             if (bundle == null)
             {
-                ListItemClicked(0);
+                ListItemClicked(1);
                 navigationView.SetCheckedItem(Resource.Id.nav_current);
+                drawerLayout.CloseDrawers();
             }
         }
         #endregion
@@ -75,7 +94,6 @@ namespace EpicWorkout.Droid.Activities
             }
             return base.OnOptionsItemSelected(item);
         }
-        //-------------------------------------------------
         //Creates options menu at top right 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -98,14 +116,20 @@ namespace EpicWorkout.Droid.Activities
 
             switch (e.MenuItem.ItemId)
             {
-                case Resource.Id.nav_current:
+                case Resource.Id.nav_profile:
                     ListItemClicked(0);
                     break;
-                case Resource.Id.nav_plans:
+                case Resource.Id.nav_current:
                     ListItemClicked(1);
                     break;
-                case Resource.Id.nav_schedule:
+                case Resource.Id.nav_plans:
                     ListItemClicked(2);
+                    break;
+                case Resource.Id.nav_exercises:
+                    ListItemClicked(3);
+                    break;
+                case Resource.Id.nav_schedule:
+                    ListItemClicked(4);
                     break;
             }
             drawerLayout.CloseDrawers();
@@ -113,16 +137,19 @@ namespace EpicWorkout.Droid.Activities
 
         private void Fab_Click(object sender, EventArgs e)
         {
-            View anchor = sender as View;
+            //View anchor = sender as View;
 
-            Snackbar.Make(anchor, "Create a Workout", Snackbar.LengthLong)
-                    .SetAction("Press Here", v =>
-                    {
-                        //Launch Workout activity
-                        //Intent intent = new Intent(fab.Context, typeof(WorkoutBuilderActivity));
-                        //StartActivity(intent);
-                    })
-                    .Show();
+            //Snackbar.Make(anchor, "Create a Workout", Snackbar.LengthLong)
+            //.SetAction("Press Here", v =>
+            //{
+            //Launch Workout activity
+            //Intent intent = new Intent(fab.Context, typeof(WorkoutBuilderActivity));
+            //StartActivity(intent);
+            //})
+            //.Show();
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            MainDialog builderDialog = new MainDialog();
+            builderDialog.Show(transaction, "dialog builder");
         }
         #endregion
         //-------------------------------------------------------------------------------------------------------//
@@ -135,14 +162,22 @@ namespace EpicWorkout.Droid.Activities
             switch (position)
             {
                 case 0:
+                    fragment = new ProfileFragment();
+                    SupportActionBar.SetTitle(Resource.String.profileString);
+                    break;
+                case 1:
                     fragment = new CurrentFragment();
                     SupportActionBar.SetTitle(Resource.String.currentString);
                     break;
-                case 1:
+                case 2:
                     fragment = new PlansFragment();
                     SupportActionBar.SetTitle(Resource.String.plansString);
                     break;
-                case 2:
+                case 3:
+                    fragment = new ExerciseFragment();
+                    SupportActionBar.SetTitle(Resource.String.exerciseString);
+                    break;
+                case 4:
                     fragment = new ScheduleFragment();
                     SupportActionBar.SetTitle(Resource.String.scheduleString);
                     break;
@@ -150,6 +185,15 @@ namespace EpicWorkout.Droid.Activities
             SupportFragmentManager.BeginTransaction()
                 .Replace(Resource.Id.content_frame, fragment)
                 .Commit();
+        }
+        private void GetUserInfo(FirebaseUser currentUser)
+        {
+            User user = new User();
+            user.uid = currentUser.Uid;
+            user.email = currentUser.Email;
+
+            FirebaseUser mUser = mAuth.CurrentUser;
+            usernameText.Text = mUser.DisplayName.ToString();
         }
         #endregion
     }

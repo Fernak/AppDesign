@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_forgot_password"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="300dp"
+    android:minHeight="400dp">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/forgot_password_text"
+        android:textStyle="bold"
+        android:text="Forgot Password"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        android:paddingBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/forgot_password_text"
+        android:id="@+id/forgot_password_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp">
+        <EditText
+            android:id="@+id/forgot_password_email"
+            android:hint="Enter retrival email"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_below="@+id/forgot_password_input_email"
+        android:id="@+id/forgot_password_btn"
+        android:text="Send"
+        android:background="#263238"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

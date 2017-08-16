@@ -47,8 +47,8 @@ namespace EpicWorkout.Droid.Authentication
 
             btnLogin.Click += BtnLogin_Click;
             btnSignUp.Click += BtnSignUp_Click;
-            
-            //btnForgotPassword.SetOnClickListener(this);
+
+            btnForgotPassword.Click += BtnForgotPassword_Click;
 
         }
         #endregion
@@ -80,6 +80,13 @@ namespace EpicWorkout.Droid.Authentication
             if (!(input_email.Text.ToString().Equals("") && input_password.Text.ToString().Equals("")))
                 mFirebaseAuth.SignInWithEmailAndPassword(input_email.Text, input_password.Text)
                     .AddOnCompleteListener(this);
+        }
+        private void BtnForgotPassword_Click(object sender, EventArgs e)
+        {
+            //Pull up dialog
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            Forgot_Password_Dialog forgotPasswordDialog = new Forgot_Password_Dialog();
+            forgotPasswordDialog.Show(transaction, "dialog forgot password");
         }
         private void BtnSignUp_Click(object sender, EventArgs e)
         {
@@ -144,8 +151,5 @@ namespace EpicWorkout.Droid.Authentication
                 Finish();
             }
         }
-
-        // ...
-
     }
 }

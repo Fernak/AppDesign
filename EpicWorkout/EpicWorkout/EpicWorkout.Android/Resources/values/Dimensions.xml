@@ -4,4 +4,20 @@
   <dimen name="card_margin">16dp</dimen>
   <dimen name="fab_margin">16dp</dimen>
   <dimen name="list_item_avatar_size">100dp</dimen>
+
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="item_offset">10dp</dimen>
+  <dimen name="backdrop_title">30dp</dimen>
+  <dimen name="backdrop_subtitle">18dp</dimen>
+  <dimen name="card_margin">10dp</dimen>
+  <dimen name="card_radius">0dp</dimen>
+  <dimen name="card_cover_height">150dp</dimen>
+  <dimen name="card_title_padding">10dp</dimen>
+  <dimen name="card_title">15dp</dimen>
+  <dimen name="card_description_padding_bottom">5dp</dimen>
+  <dimen name="card_description">12dp</dimen>
+  <dimen name="card_overflow_width">20dp</dimen>
+  <dimen name="card_overflow_height">30dp</dimen>
+  <dimen name="card_overflow_margin_top">10dp</dimen>
 </resources>

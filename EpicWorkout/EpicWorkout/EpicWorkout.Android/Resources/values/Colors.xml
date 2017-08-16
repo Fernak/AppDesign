@@ -10,4 +10,6 @@
   <color name="accent">#E040FB</color>
   <color name="window_background">#F5F5F5</color>
   <color name="splash_background">#333333</color>
+
+  <color name="text_colour">#263238</color>
 </resources>

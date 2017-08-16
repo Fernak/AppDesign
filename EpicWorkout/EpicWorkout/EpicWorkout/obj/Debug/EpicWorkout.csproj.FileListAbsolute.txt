@@ -4,5 +4,6 @@ C:\Users\Fernaak\Desktop\EpicWorkout\EpicWorkout\EpicWorkout\obj\Debug\EpicWorko
 C:\Users\Fernaak\Desktop\EpicWorkout\EpicWorkout\EpicWorkout\obj\Debug\EpicWorkout.pdb
 D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout\EpicWorkout\EpicWorkout\bin\Debug\EpicWorkout.dll
 D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout\EpicWorkout\EpicWorkout\bin\Debug\EpicWorkout.pdb
+D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout\EpicWorkout\EpicWorkout\obj\Debug\EpicWorkout.csprojResolveAssemblyReference.cache
 D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout\EpicWorkout\EpicWorkout\obj\Debug\EpicWorkout.dll
 D:\My Documents\Coding\GitHub\AppDesign\EpicWorkout\EpicWorkout\EpicWorkout\obj\Debug\EpicWorkout.pdb
